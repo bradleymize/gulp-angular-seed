@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html data-ng-app="adminlte-angular">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Starter</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+      google: {
+        families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic']
+      }
+    });
+  </script>
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- inject:vendor:js -->
+    <!-- endinject -->
+
+    <!-- inject:app:js -->
+    <!-- endinject -->
+</head>
+<body class="skin-{{adminLTESettings.userSettings.themeColor}} {{adminLTESettings.userSettings.layout}} {{adminLTESettings.userSettings.sidebar}}"
+      data-ng-class="{'control-sidebar-open': adminLTESettings.controlSidebarOpen && adminLTESettings.userSettings.sidebarPush, 'sidebar-collapse': adminLTESettings.sidebarOpen}">
+<div class="wrapper">
+
+    <div data-ng-include="'admin-lte/templates/header.tpl.html'"></div>
+
+    <div data-ng-include="'admin-lte/templates/nav-sidebar.tpl.html'"></div>
+
+    <div data-ng-include="'admin-lte/templates/main-content.tpl.html'"></div>
+
+    <div data-ng-include="'admin-lte/templates/footer.tpl.html'"></div>
+
+    <div data-ng-include="'admin-lte/templates/control-sidebar.tpl.html'"></div>
+</div>
+<!-- ./wrapper -->
+
+</body>
+</html>
